@@ -37,7 +37,7 @@ use fluentci_pdk::dag;
 
 // ...
 
-dag().call("https://pkg.fluentci.io/dagger@v0.1.0?wasm=1", "setup", vec!["latest"])?;
+dag().call("https://pkg.fluentci.io/dagger@v0.1.0?wasm=1", "setup", vec!["0.11.0"])?;
 ```
 
 ## 📚 Examples
@@ -52,7 +52,6 @@ Github Actions:
     plugin: dagger
     args: |
       setup
-    working-directory: example
 - name: Show dagger version
   run: |
     export PATH=${HOME}/.local/bin:${PATH}
