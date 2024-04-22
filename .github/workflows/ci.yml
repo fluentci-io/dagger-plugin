@@ -21,7 +21,7 @@ jobs:
           plugin: .
           args: |
             setup 0.10.0
-            call -m github.com/fluent-ci-templates/base-pipeline@main hello
+            call -m github.com/fluent-ci-templates/base-pipeline@mod hello
           working-directory: example
       - name: Show dagger version
         run: |
