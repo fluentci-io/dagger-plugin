@@ -1,5 +1,6 @@
 # Dagger Plugin
 
+[![fluentci pipeline](https://shield.fluentci.io/x/dagger)](https://pkg.fluentci.io/dagger)
 [![ci](https://github.com/fluentci-io/dagger-plugin/actions/workflows/ci.yml/badge.svg)](https://github.com/fluentci-io/dagger-plugin/actions/workflows/ci.yml)
 
 This plugin sets up your CI/CD pipeline with a specific version of [dagger](https://dagger.io).
