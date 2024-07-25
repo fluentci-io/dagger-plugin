@@ -20,11 +20,12 @@ jobs:
           wasm: true
           plugin: .
           args: |
-            setup 0.11.7
+            setup 0.12.0
             call -m github.com/fluent-ci-templates/base-pipeline@main hello
           working-directory: example
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Show dagger version
         run: |
-          export PATH=${HOME}/.local/bin:${PATH}
           type dagger
           dagger version
